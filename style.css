@@ -1,0 +1,129 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif;}
+html{
+    font-size: 62.5%; /*Padrão 10px */
+}
+
+header{}
+
+header p {
+    font-size: 17rem;
+    position: absolute;
+    top: 7rem;
+    left: 7rem;
+}
+
+
+.arte{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(45deg, #1a7a72, #06e7dc, #99FFCD, #9FB4FF);
+    background-size: 400% 400%;
+    animation: colors 15s ease infinite;
+}
+
+
+main{
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+   margin-bottom: 10%;
+}
+#container {
+    margin-top: 25rem;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 5rem;
+    width: 40rem;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+#tasksToDo {
+    display: flex;
+    height: 10rem;
+    width: 30rem;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.5rem;
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    padding: 1.2rem;
+}
+
+#tasksToDo input {
+    padding: 12px;
+    border-radius: 0.5rem;
+    border: 2px solid #d1d2d4;
+}
+#new-task-input:focus {
+    outline: none;
+    border-color: #41b883;
+}
+#tasksToDo button {
+    height: 4.8rem;
+    color: #fff;
+    background-color: #41b883;
+    border: none;
+    border-radius: 0.5rem;
+    width: 8rem;
+    cursor: pointer;
+}
+.tasks {
+    min-height: 10rem;
+    max-width: auto;
+    width: 30rem;
+    padding: 1.2rem;
+    border-radius: 1rem;
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+}
+
+
+
+
+@keyframes colors {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+.taskItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+}
+.taskItem p {
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+.taskItem i {
+    background-color: #41b883;
+    color: #fff;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+
+/* Utilities */
+.error {
+    border: 2px solid red !important;
+}
+.error::placeholder {
+    color: red;
+}
+.completed {
+    text-decoration: line-through;
+}
