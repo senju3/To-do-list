@@ -1,0 +1,1 @@
+Projeto realiazdo com intuito pessoal de uso e para praticar conhecimentos relacioandos ao front-end (HTML, CSS E JavaScript)
